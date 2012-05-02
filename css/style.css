@@ -136,7 +136,7 @@ ul { list-style: none; }
     }
         #copyCode:active { color: black; }
         #copyCode embed { left: 0; position: absolute; outline: none; }
-        #colorSwitch {
+        #colorSwitch, #cssSwitch {
             top: 41px;
             left: 1px;
             width: 78px;
@@ -147,8 +147,11 @@ ul { list-style: none; }
             overflow: hidden;
             position: absolute;
         }
+        #cssSwitch {
+            top: 60px;
+        }
             .toggle { cursor: pointer; }
-            #colorSwitch .slidePanel {
+            #colorSwitch .slidePanel, #cssSwitch .slidePanel {
                 width: 150%;
                 height: 100%;
                 left: -50%;
@@ -157,11 +160,11 @@ ul { list-style: none; }
                 -moz-transition: 320ms ease;
                 -webkit-transition: 320ms ease;
             }
-            #colorSwitch.moving .slidePanel {
+            #colorSwitch.moving .slidePanel, #cssSwitch.moving .slidePanel {
                 -moz-transition: none;
                 -webkit-transition: none;
             }
-            #colorSwitch .button {
+            #colorSwitch .button, #cssSwitch .button {
                 top: 0;
                 left: 33.33%;
                 width: 35px;
@@ -173,9 +176,9 @@ ul { list-style: none; }
                 background-image: -webkit-repeating-linear-gradient(-45deg, transparent, transparent 2px, #edc59c 2px, #edc59c 3px);
                 background-size: 4px 4px;
             }
-            #colorSwitch .left,
-            #colorSwitch .right { right: 0; width: 33.33%; height: 100%; line-height: 13px; font-size: 10px; text-align: center; position: absolute; }
-            #colorSwitch .left { left: 0; right: auto; }
+            #colorSwitch .left, #colorSwitch .right, 
+            #cssSwitch .left, #cssSwitch .right { right: 0; width: 33.33%; height: 100%; line-height: 13px; font-size: 10px; text-align: center; position: absolute; }
+            #colorSwitch .left, #cssSwitch .right { left: 0; right: auto; }
     #codeBox .body {
         color: #444;
         height: 100%;

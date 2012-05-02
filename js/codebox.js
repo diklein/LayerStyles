@@ -15,6 +15,9 @@ var codeBox = {
         this.$colorToggle = Object.create(toggle);
         this.$colorToggle.init("colorSwitch", "hex", tools.options, $.proxy( this, "render" ));
         
+		this.$codeToggle = Object.create(toggle);
+		this.$codeToggle.init("cssSwitch","sass", tools.options, $.proxy( this, "render" ));
+        
         this.location = window.location.href.slice(0, window.location.href.lastIndexOf("/"));
         this.initClipboard();
         
